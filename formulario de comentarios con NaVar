@@ -7,61 +7,84 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+ <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff !important;
+        }
+        .navbar-brand, .nav-link, .form-inline a {
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #d1ecf1 !important;
+        }
+        .dropdown-menu a {
+            color: #007bff !important;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+        .form-inline a {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        .form-inline img {
+            margin-right: 5px;
+        }
     <title>EducaciónB</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="img/otro_logo.png"></a>
-            <!--<a class="navbar-brand" href="#">EducaciónB</a>-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li>
-                    <span class="navbar-text text-primary">EducaciónB</span>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <!--<li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>-->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Estadisticas
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Reporte</a>
-                    <a class="dropdown-item" href="#">Avances</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="Logo1.jpg" alt="Logo">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="indexEdB.html">Incio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                      Seguimiento
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Accesos
                     </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Perfil</a>
-                      <a class="dropdown-item" href="#">Certificaciones</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Avances</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Acceso Participante</a>
+                        <a class="dropdown-item" href="#">Acceso Empresa </a>
+                        <a class="dropdown-item" href="Registrar_Participante.html" target="miIframe" >Registrar Participante</a>
+                        <a class="dropdown-item" href="Registrar_Empresas.html" target="miIframe" >Registrarse Empresas</a>
                     </div>
-                  </li>
-                <!---<li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>-->
-                <button type="button" class="btn btn-dark btn-outline-success my-2 my-sm-0">Log In</button>
-              </ul>
-              <!--<form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>-->
-            </div>
-          </nav>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Participante
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Comentarios.html" target="miIframe" >Comentarios</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Empresa
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Pagos.html">Pagos</a>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
        <div class="container mt-5">
       <h2 class="text-center mb-4">Formulario de Comentarios</h2>
       <form>
