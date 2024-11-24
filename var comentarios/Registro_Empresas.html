@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>EducaciónB</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff !important;
+        }
+        .navbar-brand, .nav-link, .form-inline a {
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #d1ecf1 !important;
+        }
+        .dropdown-menu a {
+            color: #007bff !important;
+        }
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+        .form-inline a {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        .form-inline img {
+            margin-right: 5px;
+        }
+    </style>
+    
+  </head>
+
+  
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        
+        <a class="navbar-brand" href="#">
+            <img src="Logo1.jpg" alt="Logo">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="indexEdB.html">Incio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Accesos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Acceso Participante</a>
+                        <a class="dropdown-item" href="#">Acceso Empresa </a>
+                        <a class="dropdown-item" href="Registrar_Participante.html" target="miIframe" >Registrar Participante</a>
+                        <a class="dropdown-item" href="Registrar_Empresas.html" target="miIframe" >Registrarse Empresas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Participante
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Comentarios.html" target="miIframe" >Comentarios</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Empresa
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Pagos.html">Pagos</a>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+
+<div class="container mt-5">
+  <h2>Registro de Empresas </h2>
+  <form>
+    <!-- Primer renglón: Nombre(s), Apellido Paterno, Apellido Materno -->
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="nombres">Nombre de la empresa:</label>
+        <input type="text" class="form-control" id="nombres" placeholder="Ingrese el nombre de la Empresa">
+      </div>
+
+       <!-- Segundo renglón: Area de a la que pertenece -->
+    <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Area a la que pertenece la empresa </label>
+          <select class="form-control">
+            <option value="titulo1">Desarrollo web</option>
+            <option value="titulo2">Big Data y análisis de datos</option>
+            <option value="titulo3">Blockchain y criptomonedas</option>
+            <option value="titulo1">Computación en la Nube</option>
+            <option value="titulo2">Internet de las Cosas (IoT)</option>
+            
+          </select>
+        </div>
+
+     
+
+    <!-- Segundo renglón: fechaCreacion -->
+    <div class="form-group col-md-4">
+      <label for="fechaCreacion">Fecha de Creación de la empresa </label>
+      <input type="date" class="form-control" id="fechaCreacion">
+    </div>
+
+     <!-- Tercer renglón: Dirección -->
+     <div class="form-row">
+        <div class="form-group col-md-4">
+          <label>Estado dónde se ubica la Empresa:</label>
+          <select class="form-control">
+            <option value="titulo1">Estado 1</option>
+            <option value="titulo2">Estado 2</option>
+            <option value="titulo3">Estado 3</option>
+          </select>
+        </div>
+        <div class="form-group">
+        <label for="codigoPostal">Código Postal:</label>
+        <input type="text" class="form-control" id="codigoPostal" placeholder="Ingrese su código postal">
+        </div>
+        
+      </div>
+
+      <!-- Cuarto renglón: Código Postal -->
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="colonia">Seleccionar Colonia:</label>
+            <select class="form-control" id="colonia">
+              <option value="colonia1">Colonia 1</option>
+              <option value="colonia2">Colonia 2</option>
+              <option value="colonia3">Colonia 3</option>
+            </select>
+          </div>
+        <div class="form-group col-md-8">
+            <label for="calle">Calle y numero:</label>
+            <input type="text" class="form-control" id="calle" placeholder="Ingrese el nombre y número de la calle">
+          </div>
+          </div>
+
+   
+
+    <!-- Quinto renglón: Teléfono 1 y Teléfono 2 -->
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="telefono1">Teléfono 1:</label>
+        <input type="tel" class="form-control" id="telefono1" placeholder="Ingrese su número de contacto">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="telefono2">Teléfono 2(opcional):</label>
+        <input type="tel" class="form-control" id="telefono2" placeholder="Ingrese su segundo número de contacto">
+      </div>
+    </div>
+
+    <!-- Sexto renglón: Correo Electrónico y Contraseña -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="password">Contraseña:</label>
+          <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+        </div>
+  
+  
+        <div class="form-row">
+          <div class="col text-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
